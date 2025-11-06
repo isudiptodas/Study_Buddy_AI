@@ -173,7 +173,7 @@ function Landing() {
                 <div className={`w-full md:w-1/2 h-auto flex flex-col justify-start items-center gap-4`}>
                     {found.map((item, index) => {
                         return <div key={index} className={`w-full flex justify-between items-center px-5 py-3 cursor-pointer hover:shadow-lg duration-150 ease-in-out rounded-lg bg-gray-200 mb-2`}>
-                            <p className={`w-full flex justify-start items-center gap-2 font-Montserrat text-lg md:text-xl`}><MdAccountCircle />Buddy {index+1} <span className={`font-semibold`}>({(item._similarity*100).toFixed(2) + '%'})</span></p>
+                            <p className={`w-full flex justify-start items-center gap-2 font-Montserrat text-[12px] md:text-xl`}><MdAccountCircle />Buddy {index+1} <span className={`font-semibold`}>({(item._similarity*100).toFixed(2) + '%'})</span></p>
                             <p onClick={() => {
                                 const name = `buddy ${index+1}`;
                                 navigate(`/connect?name=${encodeURIComponent(name)}`);
@@ -187,5 +187,6 @@ function Landing() {
 }
 
 export default Landing
+
 
 
