@@ -128,7 +128,7 @@ function Landing() {
                 <p className={`w-full font-Montserrat text-start md:text-center text-[12px] md:text-sm xl:text-lg lg:px-28 mt-5 text-black`}>Students often struggle to find the right partners for collaborative learning.
                     Our system leverages data-driven insights to match students with peers who share compatible learning styles and interests, enhancing productivity and engagement.</p>
                 <div className={`w-full h-auto flex justify-center items-center py-4`}>
-                    <img src="src\assets\home-study.jpg" className={`h-64 md:h-80`} />
+                    <img src="/assets/home-study.jpg" className={`h-64 md:h-80`} />
                 </div>
             </div>
 
@@ -187,4 +187,5 @@ function Landing() {
 }
 
 export default Landing
+
 
