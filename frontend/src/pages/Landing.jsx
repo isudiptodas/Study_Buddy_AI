@@ -85,14 +85,16 @@ function Landing() {
 
         try {
             //console.log(payload);
-            const res = await axios.post('http://localhost:5000/find-buddy?top_k=5', payload);
+            const res = await axios.post('https://study-buddy-ai-htoj.onrender.com/find-buddy?top_k=5', payload);
             //console.log(res.data);
             toast.dismiss(id);
             setFound(res.data);
             toast.success("Found matches for you");
 
         } catch (err) {
-            console.log("error ->", err)
+            console.log("error ->", err);
+            toast.dismiss(id);
+            toast.error("Something went wrong");
         }
         finally {
             toast.dismiss(id);
@@ -185,3 +187,4 @@ function Landing() {
 }
 
 export default Landing
+
