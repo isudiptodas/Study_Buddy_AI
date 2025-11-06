@@ -11,8 +11,7 @@ app = FastAPI()
 
 # Allow your React app (localhost:3000)
 origins = [
-    "http://localhost:5173",
-    "http://127.0.0.1:5173"
+    "https://study-buddy-ai-self.vercel.app/"
 ]
 
 app.add_middleware(
@@ -41,3 +40,4 @@ def find_buddy(payload: InputPayload, top_k: Optional[int] = 5):
     except Exception as e:
         print("❌ Backend error:", e)
         return {"error": str(e)}
+
