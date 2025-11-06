@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'Catchye';
+  src: url("/fonts/Catchye.otf") format("opentype");
+}
+
+@font-face {
+  font-family: 'Venus-Rising';
+  src: url("/fonts/Venus-Rising-Rg.otf") format("opentype");
+}
+
+@theme {
+  --font-Montserrat: "Montserrat", sans-serif; 
+  --font-Venus-Rising: "Venus-Rising", sans-serif; 
+  --font-Catchye: "Catchye", sans-serif; 
+}
